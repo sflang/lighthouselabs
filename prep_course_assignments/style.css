@@ -1,0 +1,75 @@
+body {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+section {
+	background-color: #00d9ff;
+	border-radius: 10px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+section#intro {
+	background-color: #d6e6d9;
+
+}
+
+section#blenders {
+	background-color: #d6e6d9;
+}
+
+section#ingredients {
+	background-color: #d6e6d9;
+}
+
+section#directions {
+	background-color: #d6e6d9;
+}
+
+table {
+	width: 100%;
+}
+
+
+h1 {
+	font-size: 80px;
+	text-shadow: 2px 2px 8px #00ff26;
+	transition: 2s ease-in-out;
+}
+
+h1:hover {
+	transform: rotate(10deg);
+
+}
+
+.img-circle {
+	border-radius: 50%;
+	border: 2px solid black;
+	box-shadow: 0 0 32px rgba(0, 0, 0, .8);
+}
+
+.img-rotate {
+	transform: rotate(90deg);
+}
+
+.img-scale {
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 0 32px rgba(0, 0, 0, .8);
+}
+
+.img-scale:hover{
+	transform: scale(1.4);
+}
+
+.green {
+	background-color: #87e087;
+}
+
+.red {
+	background-color: #e87878
+}
+
+.orange {
+	background-color: #f1b64e;
+}
