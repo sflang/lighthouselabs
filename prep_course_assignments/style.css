@@ -27,10 +27,26 @@ section#directions {
 	background-color: #d6e6d9;
 }
 
+section#shopping {
+	background-color: #d6e6d9;
+}
+
 table {
 	width: 100%;
 }
 
+form {
+	font-size: 14px;
+	margin: auto;
+	position: relative;
+	width: 250px;
+	text-align: left;
+}
+
+form span label:hover {
+	border-radius: 10%; 
+	border: 2px solid black;
+}
 
 h1 {
 	font-size: 80px;
@@ -40,8 +56,49 @@ h1 {
 
 h1:hover {
 	transform: rotate(10deg);
-
 }
+
+/* style the directions accordion */
+#instructions {
+	width: 450px;
+	margin: auto;
+}
+
+#instructions .ui-accordion-content {
+	width:  100%;
+	background-color: #f3f3f3;
+	color: #777;
+	font-size: 14px;
+}  
+
+#instructions .ui-accordion-header  {
+	text-align: center;
+}
+
+#instructions .ui-accordion-header:hover  {
+	text-decoration: underline;
+}
+
+#instructions .ui-accordion-header:first-of-type {
+    background-color: #ECEBD9 ;
+    background-image: linear-gradient(to bottom,  #ECEBD9  0%,#DC9974 100%); /* W3C */
+}
+
+#instructions .ui-accordion-header:nth-of-type(2) {
+    background-color: #C7E1EA ;
+    background-image: linear-gradient(to bottom,  #C7E1EA  0%,#638896 100%); /* W3C */
+}
+
+#instructions .ui-accordion-header:nth-of-type(3) {
+    background-color: #EAB4C5 ;
+    background-image: linear-gradient(to bottom,  #EAB4C5  0%,#F16794 100%); /* W3C */
+}
+
+#instructions .ui-accordion-header:last-of-type {
+    background-color: #E5EAAB ;
+    background-image: linear-gradient(to bottom,  #E5EAAB  0%,#768A0A 100%);
+    }
+
 
 .img-circle {
 	border-radius: 50%;

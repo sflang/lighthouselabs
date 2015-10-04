@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="./style.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"/> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script src="script.js"></script>
 		<title>GRO Smoothie Recipes</title>
 	</head>
@@ -25,10 +27,33 @@
 	        <a href="https://www.vitamix.com/shop/Blenders"> <img class="img-scale" src="Vitamix.jpg" width="86" height="160" /> <br/><br/> </a>
 	    </section>
 
+	    <section id="shopping">
+	    	<h2> Shopping List </h2>
+	    	<p> Buy the ingredients to make each recipe three times.  That way you'll shop less than once a week.  </p>
+	    	<p> <em> Remember to get organic produce whenever possible. </em> </p>
+	    	<form id="list"> 
+	    		<span> <input type="checkbox" name="item"> <label> 4 long english cucumbers </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 18 celery sticks </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 2 fennel bulbs </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 4 lemons </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 6 thumbs ginger </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 9 kale leaves </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 6 green apples </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 3 red beets </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 1 bunch italian parsley </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 1 bunch cilantro </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 2 habanero peppers </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 24 carrots </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 3 oranges </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 3 thumbs tumeric </label> </span> <br>
+	    		<span> <input type="checkbox" name="item"> <label> 3 papayas </label> </span> <br> <br>
+	        </form>
+	    </section>
 	    <section id="ingredients">
 	        <h2> Ingredients </h2>
-	            <p> High quality, organic fruits, vegetables and herbs should be used.  Unless otherwise mentioned, all of the recipes use unpeeled ingredients to gain the maximum nutritional benefit. <br/> <br/> 
+	            <p>Use high quality, organic fruits, vegetables and herbs. To maximize  nutritional benefit, use <em><strong>un</strong></em>peeled produce, except where indicated.<br/> <br/> 
 	            <em> Consider peeling non-organic ingredients. </em> </p>
+	            
 	    <table>
 	        <thead>
 	            <tr>
@@ -87,29 +112,28 @@
 	    </section>
 
 		<section id="directions">
-			<h2> Directions </h2>
-			    <table>
-			        <tbody>
-			            <tr>
-			                <td> Slice the ingredients into chunks that can be easily inserted in the blender </td>
-			                <td><img class="img-circle img-rotate" src="sliced_veggies.jpg" width="150" height="150"/> </td>
-			            </tr>
-			            <tr>
-			                <td> Load the blender with the sliced ingredients </td>
-			                <td><img class="img-circle img-rotate" src="loaded_blender.jpg" width="150" height="150"/> </td>
-			            </tr>
-			            <tr>
-			                <td> Fill the blender with water to about the 2/3s mark </td>
-			                <td><img class="img-circle img-rotate" src="loaded_with_water.jpg" width="150" height=" 150"/> </td>
-			            </tr>
-			            <tr>
-			                <td> Blend until smooth, 1-2 minutes </td>
-			                <td><img class="img-circle img-rotate" src="blender_operating.JPG" width="150" height="150" /> </td>
-			            </tr>
-
-			        </tbody>
-			    </table>
-
+            <h2> Directions </h2>
+            <div id="instructions">
+                <h4> Slice the ingredients into chunks that can be easily inserted into the blender
+                </h4> 
+                <div> <p>Leave the ingredients unpeeled,even the citrus fruit</p>
+                	<img class="img-circle img-rotate" src="sliced_veggies.jpg" width="150" height="150"/>
+                <p>The chunks can be 1"-3" in size</p>
+                </div>
+                <h4> Load the blender with the sliced ingredients
+                </h4> 
+                <div> <p> Load the lighter ingredients at the top </p><img class="img-circle img-rotate" src="loaded_blender.jpg" width="150" height="150"/> <p> ...and the denser ingredients at the bottom </p>
+                </div>
+                <h4> Fill the blender with water to about the 2/3s mark
+                </h4> 
+                <div> <p> Adjust the water level to your taste </p> <img class="img-circle img-rotate" src="loaded_with_water.jpg" width="150" height=" 150"/> <p> the less volume, the denser the smoothie </p>
+                </div>
+                <h4> Blend until smooth, 1-2 minutes
+                </h4> 
+                <div><p> You may need to tamp the ingredients to make sure they are incorporated in the smoothie </p> <img class="img-circle img-rotate" src="blender_operating.JPG" width="150" height="150" />
+                <p> Makes 1-2 litres, depending on the amount of added water </p>
+                </div>
+            </div>
 		</section>
 		
 	</body>
